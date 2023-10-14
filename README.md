@@ -43,7 +43,12 @@ Our first step in this project is to create two different virtual machines withi
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275224750-e8f74b56-e6c6-4cf8-b85e-becf0ca3f98f.png" width="75%" height="100%">
 </p>
 <p>
-It is critical that both of these virtual machines are running on the same network something that Azure does mostly automatically as long as the two virtual machines are in the same resource group. We can test this by running the _ping_ command. Doing this initially will result in no response being sent back from the server to the client. This is because by default Windows Server edition does not allow ICMP protocols, which the _ping_ command uses to connect. We enable this on the server installation so we can test the connectivity between the server and the client.
+It is critical that both of these virtual machines are running on the same network, something that Azure does mostly automatically as long as the two virtual machines are in the same resource group. We can test this by running the _ping_ command. Doing this initially will result in no response being sent back from the server to the client. This is because by default Windows Server edition does not allow ICMP protocols, which the _ping_ command uses to connect. We enable this on the server installation so we can test the connectivity between the server and the client. Once this is done, we can check back on our _ping_ and see that the server is now responding to the client.
 </p>
 <br />
-
+<p align="center">
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275225006-1c01942f-7ed3-429b-bedf-bf637fb50a7a.png" width="75%" height="50%">
+</p>
+<p>
+s
+</p>
