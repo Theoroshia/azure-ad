@@ -38,23 +38,12 @@
 <p>
 Our first step in this project is to create two different virtual machines within Azure. The first one will be a Windows Server installation, and will serve as the domain controller. A domain controller is simply a server running Active Directory, and it's role is to authenticate users and devices that try and connect to the server. The second installation will be a regular Windows 10 installation and will serve as the client computer, which we will use to connect to the domain controller. We do this by opening Microsoft Azure in our browser and generating two virtual machines. In the set-up for one, we install Windows 10. In the set-up for the other one, we install Windows Server.
 </p>
+<br />
+<p align="center">
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275224750-e8f74b56-e6c6-4cf8-b85e-becf0ca3f98f.png" width="75%" height="100%">
+</p>
 <p>
-It is critical that both of these virtual machines are running on the same network something that Azure does mostly automatically as long as the two virtual machines are 
+It is critical that both of these virtual machines are running on the same network something that Azure does mostly automatically as long as the two virtual machines are in the same resource group. We can test this by running the _ping_ command. Doing this initially will result in no response being sent back from the server to the client. This is because by default Windows Server edition does not allow ICMP protocols, which the _ping_ command uses to connect. We enable this on the server installation so we can test the connectivity between the server and the client.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
