@@ -18,14 +18,17 @@
 <h2 align="center">Operating Systems Used </h2>
 
 - Windows Server 2022
-- Windows 10 (21H2)
+- Windows 10
 
 <h2 align="center">Macro-Level Deployment and Configuration Steps</h2>
 
 - Set-up two different virtual machines: a regular Windows 10 installation and a Windows Server installation.
-- Step 2
-- Step 3
-- Step 4
+- Double check the connectivity between the two different virtual machines using _ping_.
+- Install Active Directory onto the Windows Server installation.
+- Create two groups within Active Directory, Admin's and Users, and make a new Admin user that we will use going forward to test that we set-up permissions properly.
+- Link the client computer (Windows 10 installation) to the domain controller (Windows Server installation).
+- Allow non-admin users to log-in to the client computer.
+- Generate a large number of random users using Powershell and ensure they have the proper permissions by logging into the client on one of the accounts generated.
 
 <h2>Deployment and Configuration Steps</h2>
 
