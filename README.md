@@ -30,13 +30,16 @@
 - Allow non-admin users to log-in to the client computer.
 - Generate a large number of random users using Powershell and ensure they have the proper permissions by logging into the client on one of the accounts generated.
 
-<h2>Deployment and Configuration Steps</h2>
+<h2 align="center">Deployment and Configuration Steps</h2>
 
-<p>
-![ADstep1](https://github.com/Theoroshia/azure-ad/assets/1596195/b4d8a88c-d56d-45df-9d28-db519518124b)
+<p align="center">
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275220186-b4d8a88c-d56d-45df-9d28-db519518124b.png" width="75%" height="75%">
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Our first step in this project is to create two different virtual machines within Azure. The first one will be a Windows Server installation, and will serve as the domain controller. A domain controller is simply a server running Active Directory, and it's role is to authenticate users and devices that try and connect to the server. The second installation will be a regular Windows 10 installation and will serve as the client computer, which we will use to connect to the domain controller. We do this by opening Microsoft Azure in our browser and generating two virtual machines. In the set-up for one, we install Windows 10. In the set-up for the other one, we install Windows Server.
+</p>
+<p>
+It is critical that both of these virtual machines are running on the same network something that Azure does mostly automatically as long as the two virtual machines are 
 </p>
 <br />
 
