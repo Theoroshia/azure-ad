@@ -4,7 +4,7 @@
 
 <h1 align="center"> Active Directory Deployed in the Cloud (Azure)</h1>
 
-<h2 align="center">Summary<h2>
+<h2 align="center">Summary</h2>h2>
   
 <p>This readme.md outlines the deployment of Active Directory within two Azure Virtual Machines. The purpose of this project was to get a better understanding of both Azure and Active Directory, and the process of setting up a Windows Server installation as a domain controller for Active Directory.</p>
 
