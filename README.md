@@ -6,7 +6,7 @@
 
 <h2 align="center">Summary</h2>
   
-<p>This readme.md outlines the deployment of Active Directory within two Azure Virtual Machines. The purpose of this project was to get a better understanding of both Azure and Active Directory, and the process of setting up a Windows Server installation as a domain controller for Active Directory.</p>
+<p>This readme.md outlines the deployment of Active Directory within two Azure Virtual Machines. The purpose of this project was to get a better understanding of both Azure and Active Directory, and the process of setting up a Windows Server installation as a domain controller for Active Directory. We also used Powershell to help us generate many random users into Active Directory. This project was repeated multiple times to ensure we gained a strong understanding of Active Directory and it's basic functions.</p>
 
 <h2 align="center">Environments and Technologies Used</h2>
 
