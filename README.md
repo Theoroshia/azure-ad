@@ -2,29 +2,24 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </div>
 
-<h1 align="center">On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+<h1 align="center"> Active Directory Deployed in the Cloud (Azure)</h1>
+<p>This readme.md outlines the deployment of Active Directory within two Azure Virtual Machines. The purpose of this project was to get a better understanding of both Azure and Active Directory, and the process of setting up a Windows Server installation as a domain controller for Active Directory.</p>
 
+<h2 align="center">Environments and Technologies Used</h2>
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
-
-<h2>Environments and Technologies Used</h2>
-
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure
 - Remote Desktop
 - Active Directory Domain Services
 - PowerShell
 
-<h2>Operating Systems Used </h2>
+<h2 align="center">Operating Systems Used </h2>
 
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2 align="center">Macro-Level Deployment and Configuration Steps</h2>
 
-- Step 1
+- Set-up two different virtual machines: a regular Windows 10 installation and a Windows Server installation.
 - Step 2
 - Step 3
 - Step 4
