@@ -62,5 +62,5 @@ A final step is to configure the server as a domain controller. This is also a r
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275513957-66a56bad-a044-459a-91c9-57b66d766549.png" width="75%" height="75%"></img>
 </p>
 <p>
-We do a similar process to add a regular user, named John Doe, and give them User privileges.
+We do a similar process to add a regular user, named John Doe, and give them User privileges. Our next step is to link the client installation to the newly created domain controller. First, we login to our Windows 10 virtual machine. 
 </p>
