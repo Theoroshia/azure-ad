@@ -62,5 +62,11 @@ A final step is to configure the server as a domain controller. This is also a r
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275513957-66a56bad-a044-459a-91c9-57b66d766549.png" width="75%" height="75%"></img>
 </p>
 <p>
-We do a similar process to add a regular user, named John Doe, and give them User privileges. Our next step is to link the client installation to the newly created domain controller. First, we login to our Windows 10 virtual machine. 
+We do a similar process to add a regular user, named John Doe, and give them User privileges. Our next step is to link the client installation to the newly created domain controller. To do this, we need to login to Microsoft Azure and change the DNS server that our Windows 10 installation is using. In the virtual network interface for the Windows 10 installation, we edit it's DNS settings so that it points to the Windows Server installation's private IP address. Then we restart both of our virtual machines to flush the DNS cache and the Windows 10 installation will be linked to the Windows Server installation, which is serving as the domain controller.
+</p>
+<p align="center">
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275551767-6479b3a3-220a-43a7-b354-fd71255e48af.png" width="75%" height="75%"></img>
+</p>
+<p>
+s
 </p>
