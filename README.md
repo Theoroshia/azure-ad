@@ -47,8 +47,15 @@ It is critical that both of these virtual machines are running on the same netwo
 </p>
 <br />
 <p align="center">
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275225006-1c01942f-7ed3-429b-bedf-bf637fb50a7a.png" width="75%" height="50%">
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275225006-1c01942f-7ed3-429b-bedf-bf637fb50a7a.png" width="75%" height="75%">
 </p>
 <p>
-s
+Now we can begin the process of installing Active Directory onto our Windows Server installation and making it a domain controller. The process is fairly simple, as Active Directory is built-in to Windows Server but not installed by default. First we have to login to our Windows Server installation using Remote Desktop. Then, we open up Server Manager and began configuring our server. We follow most of the prompts and select the default options, but it is important that we install the correct Active Directory service: Active Directory Domain Services. We follow the rest of the prompts and wait for Active Directory to be installed.
 </p>
+<p align="center">
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275499949-67b034a6-5065-497e-8c46-24b70ebf9d2f.png" width="75%" height="75%">
+</p>
+<p>
+A final step is to configure the server as a domain controller. This is also a relatively easy step. We simply go back into Server Manager and select the option to promote the server to a domain controller. Now we can begin the process of actually adding users to Active Directory and simulating what it would be like to work with this software in an IT setting.  
+</p>
+
