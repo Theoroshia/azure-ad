@@ -68,5 +68,5 @@ We do a similar process to add a regular user, named John Doe, and give them Use
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275551767-6479b3a3-220a-43a7-b354-fd71255e48af.png" width="75%" height="75%"></img>
 </p>
 <p>
-s
+To actually add the client PC to the domain controller, we now have to edit the client PC's settings and login to the domain controller using System Properties. The client PC will restart and then it is officially connected as a client to the domain controller.
 </p>
