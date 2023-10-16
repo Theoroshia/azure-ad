@@ -59,5 +59,8 @@ Now we can begin the process of installing Active Directory onto our Windows Ser
 A final step is to configure the server as a domain controller. This is also a relatively easy step. We simply go back into Server Manager and select the option to promote the server to a domain controller. Now we can begin the process of actually adding users to Active Directory and simulating what it would be like to work with this software in an IT setting. To do this we need to make two different accounts: an administrator account and a user account. First we open up Active Directory Users and Computers. Then, we add two new Organization Units: Admins and Users. This step is technically optional, as Organizational Units don't really have a mechanical use within Active Directory. However, by doing this we can stay organized and that will help not only us but anyone adding or editing users in the future. Next we right click in the Admins folder and add a new user, Jane Doe. After adding the user we then want to grant this user Admin privileges. We do this by right clicking the account and giving it the administrator role.
 </p>
 <p align="center">
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275513957-66a56bad-a044-459a-91c9-57b66d766549.png" width="75%" height="40%"></img>
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275513957-66a56bad-a044-459a-91c9-57b66d766549.png" width="75%" height="75%"></img>
+</p>
+<p>
+We do a similar process to add a regular user, named John Doe, and give them User privileges.
 </p>
