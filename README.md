@@ -68,5 +68,60 @@ We do a similar process to add a regular user, named John Doe, and give them Use
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/275551767-6479b3a3-220a-43a7-b354-fd71255e48af.png" width="75%" height="75%"></img>
 </p>
 <p>
-To actually add the client PC to the domain controller, we now have to edit the client PC's settings and login to the domain controller using System Properties. The client PC will restart and then it is officially connected as a client to the domain controller.
+To actually add the client PC to the domain controller, we now have to edit the client PC's settings and login to the domain controller using System Properties. The client PC will restart and then it is officially connected as a client to the domain controller. Next, we have to configure Remote Desktop so that all users can remote desktop into the client computer. By default, only users in the admin category can do that. We go into System Properties and under the Remote Desktop setting we allow all users to remote desktop in. We can test this by creating a regular user account and logging into the client with that account. We are going to do this step by creating a bunch of random accounts in Active Directory and randomly picking one to login with. To do this efficiently, we will use a PowerShell script to create the random accounts. The script I used is below.
+</p>
+
+```
+  
+                 # ----- Edit these Variables for your own Use Case ----- #
+                $PASSWORD_FOR_USERS   = "Password1"
+                $NUMBER_OF_ACCOUNTS_TO_CREATE = 1000
+                # ------------------------------------------------------ #
+                
+                Function generate-random-name() {
+                    $consonants = @('b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z')
+                    $vowels = @('a','e','i','o','u','y')
+                    $nameLength = Get-Random -Minimum 3 -Maximum 7
+                    $count = 0
+                    $name = ""
+                
+                    while ($count -lt $nameLength) {
+                        if ($($count % 2) -eq 0) {
+                            $name += $consonants[$(Get-Random -Minimum 0 -Maximum $($consonants.Count - 1))]
+                        }
+                        else {
+                            $name += $vowels[$(Get-Random -Minimum 0 -Maximum $($vowels.Count - 1))]
+                        }
+                        $count++
+                    }
+                
+                    return $name
+                
+                }
+                
+                $count = 1
+                while ($count -lt $NUMBER_OF_ACCOUNTS_TO_CREATE) {
+                    $fisrtName = generate-random-name
+                    $lastName = generate-random-name
+                    $username = $fisrtName + '.' + $lastName
+                    $password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force
+                
+                    Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan
+                    
+                    New-AdUser -AccountPassword $password `
+                               -GivenName $firstName `
+                               -Surname $lastName `
+                               -DisplayName $username `
+                               -Name $username `
+                               -EmployeeID $username `
+                               -PasswordNeverExpires $true `
+                               -Path "ou=_EMPLOYEES,$(([ADSI]`"").distinguishedName)" `
+                               -Enabled $true
+                    $count++
+                }
+                
+```
+
+<p>
+This script creates 1000 random accounts into Active Directory with random usernames and the same password (for ease of testing - this is not advised in a real world scenario). When the script is done running, we can simply pick one account at random and try to login to the client computer using that account name and password. A succesful login is the true last step of our testing.
 </p>
