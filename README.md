@@ -123,5 +123,5 @@ To actually add the client PC to the domain controller, we now have to edit the 
 ```
 
 <p>
-This script creates 1000 random accounts into Active Directory with random usernames and the same password (for ease of testing - this is not advised in a real world scenario). When the script is done running, we can simply pick one account at random and try to login to the client computer using that account name and password. A succesful login is the true last step of our testing.
+This script creates 1000 random accounts into Active Directory with random usernames and the same password (for ease of testing - this is not advised in a real world scenario). When the script is done running, we can simply pick one account at random and try to login to the client computer using that account name and password. A succesful login is the true last step of our project.
 </p>
